@@ -66,11 +66,11 @@ public class GameManager : MonoBehaviour
 
     private void ResetState()
     {
+        pacman.ResetState();
+        
         for (int i = 0; i < ghosts.Length; i++) {
             ghosts[i].ResetState();
         }
-
-        pacman.ResetState();
     }
 
     private void GameOver()
